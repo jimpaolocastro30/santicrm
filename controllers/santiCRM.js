@@ -91,7 +91,7 @@ exports.getPaginatedSearchCustomer = (req, res) => {
 exports.getCustomer = (req, res) => {
   
 
-    jBolt.find({}).exec((err, allUser) => {
+    jBolt.find({}).sort({ "_id": -1 }).exec((err, allUser) => {
       if (err) {
           return res.status(400).json({
               error: 'turnBuckle not found'
