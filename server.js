@@ -12,9 +12,12 @@ global.__basedir = __dirname;
 const anchorSagrod = require('./routes/santiCRM');
 
 
+
 // app
 const app = express();
 
+// cors
+app.use(cors({ origin: `*` }));
 //db
 
 mongoose
@@ -26,8 +29,8 @@ app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use('/uploads', express.static('uploads'))
-// cors
- app.use(cors({ origin: `*` }));
+
+//app.use(cors({ origin: `*` }));
 
 
 // routes
