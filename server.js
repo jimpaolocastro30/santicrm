@@ -27,10 +27,8 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 app.use('/uploads', express.static('uploads'))
 // cors
+ app.use(cors({ origin: `*` }));
 
-if (process.env.NODE_ENV === 'development') {
-    app.use(cors({ origin: `*` }));
-}
 
 // routes
 
