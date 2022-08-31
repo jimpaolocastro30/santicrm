@@ -1,0 +1,77 @@
+:root {
+	font-family: Poppins, 'Anek Telugu', Helvetica, Arial, sans-serif;
+	font-size: 0.95rem;
+	font-weight: 400;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+:focus {
+	outline: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: inherit;
+	font-weight: 400;
+	color: #333;
+}
+
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+input,
+select,
+textarea,
+a,
+button {
+	font-family: inherit;
+}
+
+button,
+select {
+	border: none;
+}
+
+select {
+	appearance: none;
+}
+
+button {
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+button:disabled {
+	background-color: #ddd;
+	color: #777;
+	cursor: wait;
+}
+
+input {
+	width: 100%;
+}
